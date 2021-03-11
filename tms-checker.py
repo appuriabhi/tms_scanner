@@ -157,7 +157,8 @@ def _crawler(url):
             #print(outputArr)
             df_length = len(df)
             df.loc[df_length] = outputArr
-    except: 
+    except Exception as ex:
+        print(ex)
         print('Unexpected error occured\nPlease retart program')
         quit()    
 
